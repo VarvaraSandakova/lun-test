@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" media="screen">
+    <link href="css/style.css" rel="stylesheet" media="screen">
+</head>
+<body>
+    <div class="wrapper-block">
+        <!--nav-pagination-->
+            <ul class="pagination">
+                <li data-num="1" class="available active" >1</li>
+                <li data-num="2">2</li>
+                <li data-num="3">3</li>
+                <li data-num="4">4</li>
+            </ul>
+        <!--end nav-pagination-->
+        <!--block-->
+        <div  data-num="1" class="page page1">
+            <div class="block-container">
+                <p> 1.Введите имя и e-mail</p>
+                <div class="wrapp-search">
+                    <input class="search name"  maxlength="20" type="text" placeholder="Имя" pattern="^[a-zA-Z]+(?:\s+[a-zA-Z]+)*$">
+                    <p class="error error-name"> - проверте правильность ввода поля</p>
+                </div>
+                <div class="wrapp-search">
+                    <input class="search email"  maxlength="20" placeholder="E-mail" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                    <p class="error error-email"> - в адресе должен быть символ "@"</p>
+                </div>
+             </div>
+        </div>
+        <div data-num="2" class="page page2 active">
+            <div class="block-container">
+                <p> 2.Выберите страну и город</p>
+                <div class="wrapp-search">
+                    <select class="search country"  >
+                        <option >Страна</option>
+                    </select>
+                    <p class="error error-country"> - выберите страну</p>
+                </div>
+                <div class="wrapp-search">
+                    <select class="search city" >
+                        <option >Город</option>
+                    </select>
+                    <p class="error error-city"> - выберите город</p>
+                </div>
+            </div>
+        </div>
+        <div  data-num="3" class="page page3">
+            <div class="block-container">
+                <p> 3.Отметьте социальные сети</p>
+                <div class="wrapper-social">
+                        <div class="check-block">
+                             <input type="checkbox" name="check" id="facebook" class="check-social" >
+                             <label for="facebook">Facebook</label>
+                            <input class="search social facebook" type="text" placeholder="fb.com/lun">
+                            <div class="error error-facebook">enter facebook link</div>
+                        </div>
+                        <div class="check-block">
+                            <input type="checkbox" name="check" id="vk" class="check-social" >
+                            <label for="vk">Вконтаке</label>
+                            <input class="search social vk" type="text" placeholder="vk.com/lun">
+                            <div class="error error-vk">enter vkontackte link</div>
+                        </div>
+                        <div class="check-block">
+                            <input type="checkbox" name="check" id="twitter" class="check-social" >
+                            <label for="twitter">Twitter</label>
+                            <input class="search social twitter" type="text" placeholder="tw.com/lun">
+                            <div class="error error-twitter">enter twitter link</div>
+                        </div>
+                        <div class="check-block">
+                            <input type="checkbox" name="check" id="od" class="check-social"  >
+                            <label for="od">Однокласники</label>
+                            <input class="search social od" type="text" placeholder="od.com/lun">
+                            <div class="error error-od">enter odnocklasniki link</div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div  data-num="4" class="page page4 nothing-pick">
+            <div class="block-container last">
+                <p> 4.Выберите любимого котика</p>
+                <div class="wrapper-img">
+                    <div data-animal="cat" class="img-block">
+                        <img src="img/cat1.jpg">
+                    </div>
+                    <div data-animal="cat" class="img-block">
+                        <img src="img/cat2.jpg">
+                    </div>
+                    <div  data-animal="cat" class="img-block">
+                        <img src="img/cat3.jpg">
+                    </div>
+                    <div data-animal="dog"  class="img-block ">
+                        <img src="img/dog4.jpg">
+                    </div>
+                    <div class="error error-animal">
+                        <p>Вы выбрали собачку. А надо котика.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-result">
+            <div class="block-container">
+                <div class="result-inform">
+                    <div class="result-name">rsfgdfg</div>
+                    <div class="result-email">fdgd</div>
+                    <div class="address">
+                        <p class="result-country"></p>
+                        <p class="result-city"></p>
+                    </div>
+                    <div class="social-network">
+                        <p class="fb hide">Facebook <span></span></p>
+                        <p class="vk hide">Vkontacte <span></span></p>
+                        <p class="tw hide">Twitter <span></span></p>
+                        <p class="od hide">Odnoklasniki <span></span></p>
+                    </div>
+                </div>
+                <div class="result-img">
+                    <img src="img/cat3.jpg">
+                </div>
+            </div>
+            <div class="restart">
+                <p>Пройти заново</p>
+            </div>
+        </div>
+        <!--end block-->
+        <!--nav-arrow-->
+            <ul class="nav-arrow">
+                <li class="previous show"><span>Предыдущий</span></li>
+                <li class="next show">
+                    <span>Следующий</span>
+                </li>
+                <li class="finish-test">
+                    <span >Завершить</span>
+                </li>
+            </ul>
+        <!--end nav-arrow-->
+    </div>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
