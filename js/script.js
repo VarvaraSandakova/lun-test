@@ -70,7 +70,6 @@ $(document).ready(function () {
         if(page4.hasClass('active')) {
             finishTest.addClass('show');
             nextStep.removeClass('show');
-
         } else {
             finishTest.removeClass('show');
             nextStep.addClass('show');
